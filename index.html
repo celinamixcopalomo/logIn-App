@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+   	<meta charset="utf-8">
+    <meta name="author" content="Celina Mixco @ Codify Academy">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>  Log In Project   </title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+<!-- Static container -->
+<div class="container container--static">
+    <!-- Signup prompt -->
+    <div class="info-box left">
+        <h2 class="heading">Don't have an account?</h2>
+        <button class="button button--signup">Sign up</button>
+    </div>
+    <!-- Login prompt -->
+    <div class="info-box right">
+        <h2 class="heading">Have an account?</h2>
+        <!-- <p class="info-text">Ethical celiac hashtag taxidermy squid. Wayfarers distillery narwhal, kombucha jean shorts selvage meggings.</p> -->
+        <button class="button button--login">Login</button>
+    </div>
+</div> 
+
+<!-- Sliding container -->
+<div class="container container--sliding">
+    <!-- Login -->
+    <div class="slider-content login">
+        <h2 class="heading alt">Log In</h2>
+        <form id="login">
+            <input id="email" type="text" placeholder="Email">
+            <input id="password" type="password" placeholder="Password">
+        </form>
+      
+        <button  type="button" onclick="signin()" class="btn btn-primary btn-block" class="button button--login alt" > Log In </button>
+
+        <p class="info-text alt"><a href="">Forgot password?</a></p>
+    </div>
+    
+    <!-- Signup -->
+    <div class="slider-content signup">
+        <h2 class="heading alt">Sign Up</h2>
+        <form id="signup">
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="email" type="text" placeholder="Email">
+            <input id="password" type="password" placeholder="Password">
+        </form>
+        <button type="button" onclick="signup()" class="button button--signup alt">Sign Up</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+	
+</body>
+</html>
